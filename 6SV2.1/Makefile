@@ -4,7 +4,7 @@ EXTRA   = -O -ffixed-line-length-132
 FFLAGS=  $(EXTRA)
 CFLAGS = -Ae $(EXTRA)
 #FC      = g95 $(FFLAGS)
-FC      = gfortran $(FFLAGS)
+FC      = gfortran -std=legacy -ffixed-line-length-none $(FFLAGS)
 CC      = cc $(CFLAGS)
 
 OBJECTS0 = AATSR.o ABSTRA.o AEROSO.o AKTOOL.o ATMREF.o AVHRR.o BBM.o BDM.o BRDFGRID.o \
