@@ -37,6 +37,10 @@ sixs: $(OBJECTS0) $(OBJECTS1) $(OBJECTS2)
 	$(FC)  $(OBJECTS2) $(OBJECTS0) -o sixsV2.1-lutaero  -lm
  	
 
+install:
+	cp sixsV2.1 /usr/local/bin
+
+
 clean:
 	rm -f *.o
 	
